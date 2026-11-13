@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-21.0.12.1'
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
